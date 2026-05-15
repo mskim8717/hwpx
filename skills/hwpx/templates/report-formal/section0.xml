@@ -105,7 +105,7 @@
     <hp:run charPrIDRef="10">
       <hp:t>(’YY. mm</hp:t>
     </hp:run>
-    <hp:run charPrIDRef="21">
+    <hp:run charPrIDRef="19">
       <hp:t>. dd. 부서명)</hp:t>
     </hp:run>
     <hp:linesegarray>
@@ -118,98 +118,128 @@
       <hp:lineseg textpos="0" vertpos="6210" vertsize="1400" textheight="1400" baseline="1190" spacing="140" horzpos="0" horzsize="48188" flags="393216"/>
     </hp:linesegarray>
   </hp:p>
-  <hp:p id="0" paraPrIDRef="20" styleIDRef="0" pageBreak="0" columnBreak="0" merged="0">
+  <hp:p id="0" paraPrIDRef="2" styleIDRef="0" pageBreak="0" columnBreak="0" merged="0">
     <hp:run charPrIDRef="11">
-      <hp:t>1. 헤드라인M 폰트 16포인트(문단 위 10)</hp:t>
+      <hp:t>1. 글꼴: 헤드라인M / 폰트 사이즈: 16 포인트 / 줄간격: 160%</hp:t>
     </hp:run>
     <hp:linesegarray>
-      <hp:lineseg textpos="0" vertpos="7750" vertsize="1600" textheight="1600" baseline="1360" spacing="320" horzpos="0" horzsize="48188" flags="393216"/>
+      <hp:lineseg textpos="0" vertpos="7750" vertsize="1600" textheight="1600" baseline="1360" spacing="960" horzpos="0" horzsize="48188" flags="393216"/>
     </hp:linesegarray>
   </hp:p>
-  <hp:p id="0" paraPrIDRef="20" styleIDRef="0" pageBreak="0" columnBreak="0" merged="0">
-    <hp:run charPrIDRef="23"/>
+  <hp:p id="0" paraPrIDRef="2" styleIDRef="0" pageBreak="0" columnBreak="0" merged="0">
+    <hp:run charPrIDRef="14"/>
     <hp:linesegarray>
-      <hp:lineseg textpos="0" vertpos="9670" vertsize="600" textheight="600" baseline="510" spacing="120" horzpos="0" horzsize="48188" flags="393216"/>
+      <hp:lineseg textpos="0" vertpos="10310" vertsize="400" textheight="400" baseline="340" spacing="240" horzpos="0" horzsize="48188" flags="393216"/>
     </hp:linesegarray>
   </hp:p>
-  <hp:p id="0" paraPrIDRef="20" styleIDRef="0" pageBreak="0" columnBreak="0" merged="0">
-    <hp:run charPrIDRef="15"/>
-    <hp:linesegarray>
-      <hp:lineseg textpos="0" vertpos="10390" vertsize="400" textheight="400" baseline="340" spacing="80" horzpos="0" horzsize="48188" flags="393216"/>
-    </hp:linesegarray>
-  </hp:p>
-  <hp:p id="0" paraPrIDRef="20" styleIDRef="0" pageBreak="0" columnBreak="0" merged="0">
-    <hp:run charPrIDRef="14">
-      <hp:t>□ 휴면명조 15포인트(문단위 5)</hp:t>
+  <hp:p id="2147483648" paraPrIDRef="21" styleIDRef="0" pageBreak="0" columnBreak="0" merged="0">
+    <hp:run charPrIDRef="22">
+      <hp:t>□ 글꼴 : 휴면명조 / 폰트 사이즈 : 15포인트 / 줄간격 : 160%</hp:t>
     </hp:run>
     <hp:linesegarray>
-      <hp:lineseg textpos="0" vertpos="10870" vertsize="1300" textheight="1300" baseline="1105" spacing="260" horzpos="0" horzsize="48188" flags="393216"/>
+      <hp:lineseg textpos="0" vertpos="11450" vertsize="1500" textheight="1500" baseline="1275" spacing="900" horzpos="0" horzsize="48188" flags="393216"/>
     </hp:linesegarray>
   </hp:p>
-  <hp:p id="0" paraPrIDRef="20" styleIDRef="0" pageBreak="0" columnBreak="0" merged="0">
-    <hp:run charPrIDRef="24"/>
+  <hp:p id="0" paraPrIDRef="2" styleIDRef="0" pageBreak="0" columnBreak="0" merged="0">
+    <hp:run charPrIDRef="14"/>
     <hp:linesegarray>
-      <hp:lineseg textpos="0" vertpos="12430" vertsize="2000" textheight="2000" baseline="1700" spacing="400" horzpos="0" horzsize="48188" flags="393216"/>
+      <hp:lineseg textpos="0" vertpos="13850" vertsize="400" textheight="400" baseline="340" spacing="240" horzpos="0" horzsize="48188" flags="393216"/>
     </hp:linesegarray>
   </hp:p>
-  <hp:p id="0" paraPrIDRef="20" styleIDRef="0" pageBreak="0" columnBreak="0" merged="0">
+  <hp:p id="2147483648" paraPrIDRef="21" styleIDRef="0" pageBreak="0" columnBreak="0" merged="0">
+    <hp:run charPrIDRef="22">
+      <hp:t>□ 글꼴 : 휴면명조 / 폰트 사이즈 : 15포인트 / 줄간격 : 160%</hp:t>
+    </hp:run>
+    <hp:linesegarray>
+      <hp:lineseg textpos="0" vertpos="14990" vertsize="1500" textheight="1500" baseline="1275" spacing="900" horzpos="0" horzsize="48188" flags="393216"/>
+    </hp:linesegarray>
+  </hp:p>
+  <hp:p id="0" paraPrIDRef="2" styleIDRef="0" pageBreak="0" columnBreak="0" merged="0">
+    <hp:run charPrIDRef="21"/>
+    <hp:linesegarray>
+      <hp:lineseg textpos="0" vertpos="17390" vertsize="1100" textheight="1100" baseline="935" spacing="660" horzpos="0" horzsize="48188" flags="393216"/>
+    </hp:linesegarray>
+  </hp:p>
+  <hp:p id="0" paraPrIDRef="2" styleIDRef="0" pageBreak="0" columnBreak="0" merged="0">
     <hp:run charPrIDRef="11">
-      <hp:t>2. 헤드라인M 폰트 16포인트(문단 위 10)</hp:t>
+      <hp:t>2. 글꼴: 헤드라인M / 폰트 사이즈: 16 포인트 / 줄간격: 160%</hp:t>
     </hp:run>
     <hp:linesegarray>
-      <hp:lineseg textpos="0" vertpos="14830" vertsize="1600" textheight="1600" baseline="1360" spacing="320" horzpos="0" horzsize="48188" flags="393216"/>
+      <hp:lineseg textpos="0" vertpos="19150" vertsize="1600" textheight="1600" baseline="1360" spacing="960" horzpos="0" horzsize="48188" flags="393216"/>
     </hp:linesegarray>
   </hp:p>
-  <hp:p id="2147483648" paraPrIDRef="20" styleIDRef="0" pageBreak="0" columnBreak="0" merged="0">
-    <hp:run charPrIDRef="23"/>
+  <hp:p id="2147483648" paraPrIDRef="2" styleIDRef="0" pageBreak="0" columnBreak="0" merged="0">
+    <hp:run charPrIDRef="14"/>
     <hp:linesegarray>
-      <hp:lineseg textpos="0" vertpos="16750" vertsize="600" textheight="600" baseline="510" spacing="120" horzpos="0" horzsize="48188" flags="393216"/>
+      <hp:lineseg textpos="0" vertpos="21710" vertsize="400" textheight="400" baseline="340" spacing="240" horzpos="0" horzsize="48188" flags="393216"/>
     </hp:linesegarray>
   </hp:p>
-  <hp:p id="2147483648" paraPrIDRef="20" styleIDRef="0" pageBreak="0" columnBreak="0" merged="0">
-    <hp:run charPrIDRef="14">
-      <hp:t>□ 휴면명조 15포인트(문단위 5)</hp:t>
+  <hp:p id="2147483648" paraPrIDRef="21" styleIDRef="0" pageBreak="0" columnBreak="0" merged="0">
+    <hp:run charPrIDRef="22">
+      <hp:t>□ 글꼴 : 휴면명조 / 폰트 사이즈 : 15포인트 / 줄간격 : 160%</hp:t>
     </hp:run>
     <hp:linesegarray>
-      <hp:lineseg textpos="0" vertpos="17470" vertsize="1300" textheight="1300" baseline="1105" spacing="260" horzpos="0" horzsize="48188" flags="393216"/>
+      <hp:lineseg textpos="0" vertpos="22850" vertsize="1500" textheight="1500" baseline="1275" spacing="900" horzpos="0" horzsize="48188" flags="393216"/>
     </hp:linesegarray>
   </hp:p>
-  <hp:p id="0" paraPrIDRef="20" styleIDRef="0" pageBreak="0" columnBreak="0" merged="0">
-    <hp:run charPrIDRef="16"/>
+  <hp:p id="2147483648" paraPrIDRef="2" styleIDRef="0" pageBreak="0" columnBreak="0" merged="0">
+    <hp:run charPrIDRef="14"/>
     <hp:linesegarray>
-      <hp:lineseg textpos="0" vertpos="19030" vertsize="1100" textheight="1100" baseline="935" spacing="220" horzpos="0" horzsize="48188" flags="393216"/>
+      <hp:lineseg textpos="0" vertpos="25250" vertsize="400" textheight="400" baseline="340" spacing="240" horzpos="0" horzsize="48188" flags="393216"/>
     </hp:linesegarray>
   </hp:p>
-  <hp:p id="2147483648" paraPrIDRef="20" styleIDRef="0" pageBreak="0" columnBreak="0" merged="0">
+  <hp:p id="2147483648" paraPrIDRef="21" styleIDRef="0" pageBreak="0" columnBreak="0" merged="0">
+    <hp:run charPrIDRef="22">
+      <hp:t>□ 글꼴 : 휴면명조 / 폰트 사이즈 : 15포인트 / 줄간격 : 160%</hp:t>
+    </hp:run>
+    <hp:linesegarray>
+      <hp:lineseg textpos="0" vertpos="26390" vertsize="1500" textheight="1500" baseline="1275" spacing="900" horzpos="0" horzsize="48188" flags="393216"/>
+    </hp:linesegarray>
+  </hp:p>
+  <hp:p id="0" paraPrIDRef="2" styleIDRef="0" pageBreak="0" columnBreak="0" merged="0">
+    <hp:run charPrIDRef="21"/>
+    <hp:linesegarray>
+      <hp:lineseg textpos="0" vertpos="28790" vertsize="1100" textheight="1100" baseline="935" spacing="660" horzpos="0" horzsize="48188" flags="393216"/>
+    </hp:linesegarray>
+  </hp:p>
+  <hp:p id="2147483648" paraPrIDRef="2" styleIDRef="0" pageBreak="0" columnBreak="0" merged="0">
     <hp:run charPrIDRef="11">
       <hp:t>3. 헤드라인M 폰트 16포인트(문단 위 10)</hp:t>
     </hp:run>
     <hp:linesegarray>
-      <hp:lineseg textpos="0" vertpos="20350" vertsize="1600" textheight="1600" baseline="1360" spacing="320" horzpos="0" horzsize="48188" flags="393216"/>
+      <hp:lineseg textpos="0" vertpos="30550" vertsize="1600" textheight="1600" baseline="1360" spacing="960" horzpos="0" horzsize="48188" flags="393216"/>
     </hp:linesegarray>
   </hp:p>
-  <hp:p id="0" paraPrIDRef="20" styleIDRef="0" pageBreak="0" columnBreak="0" merged="0">
-    <hp:run charPrIDRef="23"/>
+  <hp:p id="0" paraPrIDRef="2" styleIDRef="0" pageBreak="0" columnBreak="0" merged="0">
+    <hp:run charPrIDRef="14"/>
     <hp:linesegarray>
-      <hp:lineseg textpos="0" vertpos="22270" vertsize="600" textheight="600" baseline="510" spacing="120" horzpos="0" horzsize="48188" flags="393216"/>
+      <hp:lineseg textpos="0" vertpos="33110" vertsize="400" textheight="400" baseline="340" spacing="240" horzpos="0" horzsize="48188" flags="393216"/>
     </hp:linesegarray>
   </hp:p>
-  <hp:p id="0" paraPrIDRef="20" styleIDRef="0" pageBreak="0" columnBreak="0" merged="0">
-    <hp:run charPrIDRef="15"/>
-    <hp:linesegarray>
-      <hp:lineseg textpos="0" vertpos="22990" vertsize="400" textheight="400" baseline="340" spacing="80" horzpos="0" horzsize="48188" flags="393216"/>
-    </hp:linesegarray>
-  </hp:p>
-  <hp:p id="2147483648" paraPrIDRef="20" styleIDRef="0" pageBreak="0" columnBreak="0" merged="0">
-    <hp:run charPrIDRef="14">
-      <hp:t>□ 휴면명조 15포인트(문단위 5)</hp:t>
+  <hp:p id="2147483648" paraPrIDRef="21" styleIDRef="0" pageBreak="0" columnBreak="0" merged="0">
+    <hp:run charPrIDRef="22">
+      <hp:t>□ 글꼴 : 휴면명조 / 폰트 사이즈 : 15포인트 / 줄간격 : 160%</hp:t>
     </hp:run>
     <hp:linesegarray>
-      <hp:lineseg textpos="0" vertpos="23470" vertsize="1300" textheight="1300" baseline="1105" spacing="260" horzpos="0" horzsize="48188" flags="393216"/>
+      <hp:lineseg textpos="0" vertpos="34250" vertsize="1500" textheight="1500" baseline="1275" spacing="900" horzpos="0" horzsize="48188" flags="393216"/>
+    </hp:linesegarray>
+  </hp:p>
+  <hp:p id="2147483648" paraPrIDRef="2" styleIDRef="0" pageBreak="0" columnBreak="0" merged="0">
+    <hp:run charPrIDRef="14"/>
+    <hp:linesegarray>
+      <hp:lineseg textpos="0" vertpos="36650" vertsize="400" textheight="400" baseline="340" spacing="240" horzpos="0" horzsize="48188" flags="393216"/>
+    </hp:linesegarray>
+  </hp:p>
+  <hp:p id="2147483648" paraPrIDRef="21" styleIDRef="0" pageBreak="0" columnBreak="0" merged="0">
+    <hp:run charPrIDRef="22">
+      <hp:t>□ 글꼴 : 휴면명조 / 폰트 사이즈 : 15포인트 / 줄간격 : 160%</hp:t>
+    </hp:run>
+    <hp:linesegarray>
+      <hp:lineseg textpos="0" vertpos="37790" vertsize="1500" textheight="1500" baseline="1275" spacing="900" horzpos="0" horzsize="48188" flags="393216"/>
     </hp:linesegarray>
   </hp:p>
   <hp:p id="0" paraPrIDRef="18" styleIDRef="0" pageBreak="1" columnBreak="0" merged="0">
-    <hp:run charPrIDRef="17">
+    <hp:run charPrIDRef="15">
       <hp:tbl id="1772236620" zOrder="1" numberingType="TABLE" textWrap="TOP_AND_BOTTOM" textFlow="BOTH_SIDES" lock="0" dropcapstyle="None" pageBreak="NONE" repeatHeader="1" rowCnt="1" colCnt="3" cellSpacing="0" borderFillIDRef="8" noAdjust="0">
         <hp:sz width="47722" widthRelTo="ABSOLUTE" height="3114" heightRelTo="ABSOLUTE" protect="0"/>
         <hp:pos treatAsChar="1" affectLSpacing="0" flowWithText="1" allowOverlap="0" holdAnchorAndSO="0" vertRelTo="PARA" horzRelTo="PARA" vertAlign="TOP" horzAlign="LEFT" vertOffset="105" horzOffset="0"/>
@@ -219,7 +249,7 @@
           <hp:tc name="" header="0" hasMargin="0" protect="0" editable="0" dirty="0" borderFillIDRef="9">
             <hp:subList id="" textDirection="HORIZONTAL" lineWrap="BREAK" vertAlign="CENTER" linkListIDRef="0" linkListNextIDRef="0" textWidth="0" textHeight="0" hasTextRef="0" hasNumRef="0">
               <hp:p id="2147483648" paraPrIDRef="19" styleIDRef="0" pageBreak="0" columnBreak="0" merged="0">
-                <hp:run charPrIDRef="18">
+                <hp:run charPrIDRef="16">
                   <hp:t>붙임1</hp:t>
                 </hp:run>
                 <hp:linesegarray>
@@ -235,7 +265,7 @@
           <hp:tc name="" header="0" hasMargin="0" protect="0" editable="0" dirty="0" borderFillIDRef="10">
             <hp:subList id="" textDirection="HORIZONTAL" lineWrap="BREAK" vertAlign="CENTER" linkListIDRef="0" linkListNextIDRef="0" textWidth="0" textHeight="0" hasTextRef="0" hasNumRef="0">
               <hp:p id="2147483648" paraPrIDRef="17" styleIDRef="0" pageBreak="0" columnBreak="0" merged="0">
-                <hp:run charPrIDRef="19"/>
+                <hp:run charPrIDRef="17"/>
                 <hp:linesegarray>
                   <hp:lineseg textpos="0" vertpos="0" vertsize="1600" textheight="1600" baseline="1360" spacing="960" horzpos="0" horzsize="1440" flags="393216"/>
                 </hp:linesegarray>
@@ -249,7 +279,7 @@
           <hp:tc name="" header="0" hasMargin="0" protect="0" editable="0" dirty="0" borderFillIDRef="11">
             <hp:subList id="" textDirection="HORIZONTAL" lineWrap="BREAK" vertAlign="CENTER" linkListIDRef="0" linkListNextIDRef="0" textWidth="0" textHeight="0" hasTextRef="0" hasNumRef="0">
               <hp:p id="2147483648" paraPrIDRef="2" styleIDRef="0" pageBreak="0" columnBreak="0" merged="0">
-                <hp:run charPrIDRef="19">
+                <hp:run charPrIDRef="17">
                   <hp:t> 붙임자료 제목</hp:t>
                 </hp:run>
                 <hp:linesegarray>
@@ -272,13 +302,13 @@
     </hp:linesegarray>
   </hp:p>
   <hp:p id="0" paraPrIDRef="18" styleIDRef="0" pageBreak="0" columnBreak="0" merged="0">
-    <hp:run charPrIDRef="22"/>
+    <hp:run charPrIDRef="20"/>
     <hp:linesegarray>
       <hp:lineseg textpos="0" vertpos="4094" vertsize="100" textheight="100" baseline="85" spacing="52" horzpos="0" horzsize="48188" flags="393216"/>
     </hp:linesegarray>
   </hp:p>
   <hp:p id="0" paraPrIDRef="18" styleIDRef="0" pageBreak="0" columnBreak="0" merged="0">
-    <hp:run charPrIDRef="17">
+    <hp:run charPrIDRef="15">
       <hp:tbl id="1792031118" zOrder="2" numberingType="TABLE" textWrap="TOP_AND_BOTTOM" textFlow="BOTH_SIDES" lock="0" dropcapstyle="None" pageBreak="CELL" repeatHeader="1" rowCnt="1" colCnt="1" cellSpacing="0" borderFillIDRef="4" noAdjust="0">
         <hp:sz width="47624" widthRelTo="ABSOLUTE" height="65184" heightRelTo="ABSOLUTE" protect="0"/>
         <hp:pos treatAsChar="0" affectLSpacing="0" flowWithText="1" allowOverlap="0" holdAnchorAndSO="0" vertRelTo="PARA" horzRelTo="PARA" vertAlign="TOP" horzAlign="LEFT" vertOffset="105" horzOffset="0"/>
@@ -287,7 +317,7 @@
         <hp:tr>
           <hp:tc name="" header="0" hasMargin="0" protect="0" editable="0" dirty="0" borderFillIDRef="4">
             <hp:subList id="" textDirection="HORIZONTAL" lineWrap="BREAK" vertAlign="CENTER" linkListIDRef="0" linkListNextIDRef="0" textWidth="0" textHeight="0" hasTextRef="0" hasNumRef="0">
-              <hp:p id="0" paraPrIDRef="21" styleIDRef="0" pageBreak="0" columnBreak="0" merged="0">
+              <hp:p id="0" paraPrIDRef="20" styleIDRef="0" pageBreak="0" columnBreak="0" merged="0">
                 <hp:run charPrIDRef="9"/>
                 <hp:linesegarray>
                   <hp:lineseg textpos="0" vertpos="0" vertsize="1000" textheight="1000" baseline="850" spacing="600" horzpos="0" horzsize="46604" flags="393216"/>
@@ -302,7 +332,7 @@
         </hp:tr>
       </hp:tbl>
     </hp:run>
-    <hp:run charPrIDRef="20">
+    <hp:run charPrIDRef="18">
       <hp:t/>
     </hp:run>
     <hp:linesegarray>

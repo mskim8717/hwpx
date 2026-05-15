@@ -512,7 +512,7 @@ python3 "$SKILL_DIR/scripts/preview_table.py" --all
 
 핵심 차이(요약):
 
-- charPr: 약 25개(id 0~24). 본문 한글 폰트가 `report`와 다른 ID에 매핑됨
+- charPr: 약 23개(id 0~22). 본문 한글 폰트가 `report`와 다른 ID에 매핑됨
 - paraPr: 약 22개
 - borderFill: 약 11개(공식 양식의 결재란/직인란 등 포함 가능)
 

@@ -3,7 +3,7 @@
   <hh:beginNum page="1" footnote="1" endnote="1" pic="1" tbl="1" equation="1"/>
   <hh:refList>
     <hh:fontfaces itemCnt="7">
-      <hh:fontface lang="HANGUL" fontCnt="9">
+      <hh:fontface lang="HANGUL" fontCnt="8">
         <hh:font id="0" face="굴림" type="TTF" isEmbedded="0"/>
         <hh:font id="1" face="맑은 고딕" type="TTF" isEmbedded="0"/>
         <hh:font id="2" face="함초롬돋움" type="TTF" isEmbedded="0"/>
@@ -19,12 +19,8 @@
           <hh:substFont face="한컴바탕" type="TTF" isEmbedded="0" binaryItemIDRef=""/>
           <hh:typeInfo familyType="FCAT_GOTHIC" weight="6" proportion="0" contrast="0" strokeVariation="1" armStyle="1" letterform="1" midline="1" xHeight="1"/>
         </hh:font>
-        <hh:font id="8" face="HY신명조" type="TTF" isEmbedded="0">
-          <hh:substFont face="함초롬바탕" type="TTF" isEmbedded="0" binaryItemIDRef=""/>
-          <hh:typeInfo familyType="FCAT_GOTHIC" weight="6" proportion="0" contrast="0" strokeVariation="1" armStyle="1" letterform="1" midline="1" xHeight="1"/>
-        </hh:font>
       </hh:fontface>
-      <hh:fontface lang="LATIN" fontCnt="9">
+      <hh:fontface lang="LATIN" fontCnt="8">
         <hh:font id="0" face="굴림" type="TTF" isEmbedded="0"/>
         <hh:font id="1" face="맑은 고딕" type="TTF" isEmbedded="0"/>
         <hh:font id="2" face="함초롬돋움" type="TTF" isEmbedded="0"/>
@@ -40,12 +36,8 @@
           <hh:substFont face="한컴바탕" type="TTF" isEmbedded="0" binaryItemIDRef=""/>
           <hh:typeInfo familyType="FCAT_GOTHIC" weight="6" proportion="0" contrast="0" strokeVariation="1" armStyle="1" letterform="1" midline="1" xHeight="1"/>
         </hh:font>
-        <hh:font id="8" face="HY신명조" type="TTF" isEmbedded="0">
-          <hh:substFont face="함초롬바탕" type="TTF" isEmbedded="0" binaryItemIDRef=""/>
-          <hh:typeInfo familyType="FCAT_GOTHIC" weight="6" proportion="0" contrast="0" strokeVariation="1" armStyle="1" letterform="1" midline="1" xHeight="1"/>
-        </hh:font>
       </hh:fontface>
-      <hh:fontface lang="HANJA" fontCnt="10">
+      <hh:fontface lang="HANJA" fontCnt="9">
         <hh:font id="0" face="굴림" type="TTF" isEmbedded="0"/>
         <hh:font id="1" face="맑은 고딕" type="TTF" isEmbedded="0"/>
         <hh:font id="2" face="한컴바탕" type="TTF" isEmbedded="0"/>
@@ -62,12 +54,8 @@
           <hh:substFont face="한컴바탕" type="TTF" isEmbedded="0" binaryItemIDRef=""/>
           <hh:typeInfo familyType="FCAT_GOTHIC" weight="6" proportion="0" contrast="0" strokeVariation="1" armStyle="1" letterform="1" midline="1" xHeight="1"/>
         </hh:font>
-        <hh:font id="9" face="HY신명조" type="TTF" isEmbedded="0">
-          <hh:substFont face="함초롬바탕" type="TTF" isEmbedded="0" binaryItemIDRef=""/>
-          <hh:typeInfo familyType="FCAT_GOTHIC" weight="6" proportion="0" contrast="0" strokeVariation="1" armStyle="1" letterform="1" midline="1" xHeight="1"/>
-        </hh:font>
       </hh:fontface>
-      <hh:fontface lang="JAPANESE" fontCnt="10">
+      <hh:fontface lang="JAPANESE" fontCnt="9">
         <hh:font id="0" face="굴림" type="TTF" isEmbedded="0"/>
         <hh:font id="1" face="맑은 고딕" type="TTF" isEmbedded="0"/>
         <hh:font id="2" face="한컴바탕" type="TTF" isEmbedded="0"/>
@@ -84,12 +72,8 @@
           <hh:substFont face="한컴바탕" type="TTF" isEmbedded="0" binaryItemIDRef=""/>
           <hh:typeInfo familyType="FCAT_GOTHIC" weight="6" proportion="0" contrast="0" strokeVariation="1" armStyle="1" letterform="1" midline="1" xHeight="1"/>
         </hh:font>
-        <hh:font id="9" face="HY신명조" type="TTF" isEmbedded="0">
-          <hh:substFont face="함초롬바탕" type="TTF" isEmbedded="0" binaryItemIDRef=""/>
-          <hh:typeInfo familyType="FCAT_GOTHIC" weight="6" proportion="0" contrast="0" strokeVariation="1" armStyle="1" letterform="1" midline="1" xHeight="1"/>
-        </hh:font>
       </hh:fontface>
-      <hh:fontface lang="OTHER" fontCnt="9">
+      <hh:fontface lang="OTHER" fontCnt="8">
         <hh:font id="0" face="굴림" type="TTF" isEmbedded="0"/>
         <hh:font id="1" face="맑은 고딕" type="TTF" isEmbedded="0"/>
         <hh:font id="2" face="한컴바탕" type="TTF" isEmbedded="0"/>
@@ -103,12 +87,8 @@
           <hh:substFont face="한컴바탕" type="TTF" isEmbedded="0" binaryItemIDRef=""/>
           <hh:typeInfo familyType="FCAT_GOTHIC" weight="6" proportion="4" contrast="2" strokeVariation="2" armStyle="2" letterform="2" midline="2" xHeight="4"/>
         </hh:font>
-        <hh:font id="8" face="HY신명조" type="TTF" isEmbedded="0">
-          <hh:substFont face="함초롬바탕" type="TTF" isEmbedded="0" binaryItemIDRef=""/>
-          <hh:typeInfo familyType="FCAT_GOTHIC" weight="6" proportion="4" contrast="2" strokeVariation="2" armStyle="2" letterform="2" midline="2" xHeight="4"/>
-        </hh:font>
       </hh:fontface>
-      <hh:fontface lang="SYMBOL" fontCnt="10">
+      <hh:fontface lang="SYMBOL" fontCnt="9">
         <hh:font id="0" face="굴림" type="TTF" isEmbedded="0"/>
         <hh:font id="1" face="맑은 고딕" type="TTF" isEmbedded="0"/>
         <hh:font id="2" face="한컴바탕" type="TTF" isEmbedded="0"/>
@@ -125,12 +105,8 @@
           <hh:substFont face="한컴바탕" type="TTF" isEmbedded="0" binaryItemIDRef=""/>
           <hh:typeInfo familyType="FCAT_GOTHIC" weight="6" proportion="0" contrast="0" strokeVariation="1" armStyle="1" letterform="1" midline="1" xHeight="1"/>
         </hh:font>
-        <hh:font id="9" face="HY신명조" type="TTF" isEmbedded="0">
-          <hh:substFont face="함초롬바탕" type="TTF" isEmbedded="0" binaryItemIDRef=""/>
-          <hh:typeInfo familyType="FCAT_GOTHIC" weight="6" proportion="0" contrast="0" strokeVariation="1" armStyle="1" letterform="1" midline="1" xHeight="1"/>
-        </hh:font>
       </hh:fontface>
-      <hh:fontface lang="USER" fontCnt="9">
+      <hh:fontface lang="USER" fontCnt="8">
         <hh:font id="0" face="굴림" type="TTF" isEmbedded="0"/>
         <hh:font id="1" face="맑은 고딕" type="TTF" isEmbedded="0"/>
         <hh:font id="2" face="한컴바탕" type="TTF" isEmbedded="0"/>
@@ -142,10 +118,6 @@
         </hh:font>
         <hh:font id="7" face="바탕" type="TTF" isEmbedded="0">
           <hh:substFont face="한컴바탕" type="TTF" isEmbedded="0" binaryItemIDRef=""/>
-          <hh:typeInfo familyType="FCAT_GOTHIC" weight="6" proportion="0" contrast="0" strokeVariation="1" armStyle="1" letterform="1" midline="1" xHeight="1"/>
-        </hh:font>
-        <hh:font id="8" face="HY신명조" type="TTF" isEmbedded="0">
-          <hh:substFont face="함초롬바탕" type="TTF" isEmbedded="0" binaryItemIDRef=""/>
           <hh:typeInfo familyType="FCAT_GOTHIC" weight="6" proportion="0" contrast="0" strokeVariation="1" armStyle="1" letterform="1" midline="1" xHeight="1"/>
         </hh:font>
       </hh:fontface>
@@ -269,7 +241,7 @@
         <hh:diagonal type="SOLID" width="0.1 mm" color="#000000"/>
       </hh:borderFill>
     </hh:borderFills>
-    <hh:charProperties itemCnt="25">
+    <hh:charProperties itemCnt="23">
       <hh:charPr id="0" height="1400" textColor="#000000" shadeColor="none" useFontSpace="0" useKerning="0" symMark="NONE" borderFillIDRef="2">
         <hh:fontRef hangul="3" latin="3" hanja="4" japanese="4" other="4" symbol="4" user="4"/>
         <hh:ratio hangul="100" latin="100" hanja="100" japanese="100" other="100" symbol="100" user="100"/>
@@ -424,18 +396,7 @@
         <hh:outline type="NONE"/>
         <hh:shadow type="NONE" color="#C0C0C0" offsetX="10" offsetY="10"/>
       </hh:charPr>
-      <hh:charPr id="14" height="1300" textColor="#000000" shadeColor="none" useFontSpace="0" useKerning="0" symMark="NONE" borderFillIDRef="2">
-        <hh:fontRef hangul="8" latin="8" hanja="9" japanese="9" other="8" symbol="9" user="8"/>
-        <hh:ratio hangul="100" latin="100" hanja="100" japanese="100" other="100" symbol="100" user="100"/>
-        <hh:spacing hangul="0" latin="0" hanja="0" japanese="0" other="0" symbol="0" user="0"/>
-        <hh:relSz hangul="100" latin="100" hanja="100" japanese="100" other="100" symbol="100" user="100"/>
-        <hh:offset hangul="0" latin="0" hanja="0" japanese="0" other="0" symbol="0" user="0"/>
-        <hh:underline type="NONE" shape="SOLID" color="#000000"/>
-        <hh:strikeout shape="NONE" color="#000000"/>
-        <hh:outline type="NONE"/>
-        <hh:shadow type="NONE" color="#C0C0C0" offsetX="10" offsetY="10"/>
-      </hh:charPr>
-      <hh:charPr id="15" height="400" textColor="#000000" shadeColor="none" useFontSpace="0" useKerning="0" symMark="NONE" borderFillIDRef="3">
+      <hh:charPr id="14" height="400" textColor="#000000" shadeColor="none" useFontSpace="0" useKerning="0" symMark="NONE" borderFillIDRef="3">
         <hh:fontRef hangul="4" latin="4" hanja="5" japanese="5" other="5" symbol="5" user="5"/>
         <hh:ratio hangul="100" latin="100" hanja="100" japanese="100" other="100" symbol="100" user="100"/>
         <hh:spacing hangul="0" latin="0" hanja="0" japanese="0" other="0" symbol="0" user="0"/>
@@ -446,18 +407,7 @@
         <hh:outline type="NONE"/>
         <hh:shadow type="NONE" color="#C0C0C0" offsetX="10" offsetY="10"/>
       </hh:charPr>
-      <hh:charPr id="16" height="1100" textColor="#000000" shadeColor="none" useFontSpace="0" useKerning="0" symMark="NONE" borderFillIDRef="2">
-        <hh:fontRef hangul="6" latin="6" hanja="7" japanese="7" other="6" symbol="7" user="6"/>
-        <hh:ratio hangul="100" latin="100" hanja="100" japanese="100" other="100" symbol="100" user="100"/>
-        <hh:spacing hangul="0" latin="0" hanja="0" japanese="0" other="0" symbol="0" user="0"/>
-        <hh:relSz hangul="100" latin="100" hanja="100" japanese="100" other="100" symbol="100" user="100"/>
-        <hh:offset hangul="0" latin="0" hanja="0" japanese="0" other="0" symbol="0" user="0"/>
-        <hh:underline type="NONE" shape="SOLID" color="#000000"/>
-        <hh:strikeout shape="NONE" color="#000000"/>
-        <hh:outline type="NONE"/>
-        <hh:shadow type="NONE" color="#C0C0C0" offsetX="10" offsetY="10"/>
-      </hh:charPr>
-      <hh:charPr id="17" height="1400" textColor="#000000" shadeColor="none" useFontSpace="0" useKerning="0" symMark="NONE" borderFillIDRef="2">
+      <hh:charPr id="15" height="1400" textColor="#000000" shadeColor="none" useFontSpace="0" useKerning="0" symMark="NONE" borderFillIDRef="2">
         <hh:fontRef hangul="2" latin="2" hanja="3" japanese="3" other="3" symbol="3" user="3"/>
         <hh:ratio hangul="100" latin="100" hanja="100" japanese="100" other="100" symbol="100" user="100"/>
         <hh:spacing hangul="0" latin="0" hanja="0" japanese="0" other="0" symbol="0" user="0"/>
@@ -469,7 +419,7 @@
         <hh:outline type="NONE"/>
         <hh:shadow type="NONE" color="#C0C0C0" offsetX="10" offsetY="10"/>
       </hh:charPr>
-      <hh:charPr id="18" height="1600" textColor="#FFFFFF" shadeColor="none" useFontSpace="0" useKerning="0" symMark="NONE" borderFillIDRef="2">
+      <hh:charPr id="16" height="1600" textColor="#FFFFFF" shadeColor="none" useFontSpace="0" useKerning="0" symMark="NONE" borderFillIDRef="2">
         <hh:fontRef hangul="4" latin="4" hanja="5" japanese="5" other="5" symbol="5" user="5"/>
         <hh:ratio hangul="100" latin="100" hanja="100" japanese="100" other="100" symbol="100" user="100"/>
         <hh:spacing hangul="0" latin="0" hanja="0" japanese="0" other="0" symbol="0" user="0"/>
@@ -480,7 +430,7 @@
         <hh:outline type="NONE"/>
         <hh:shadow type="NONE" color="#C0C0C0" offsetX="10" offsetY="10"/>
       </hh:charPr>
-      <hh:charPr id="19" height="1600" textColor="#000000" shadeColor="none" useFontSpace="0" useKerning="0" symMark="NONE" borderFillIDRef="2">
+      <hh:charPr id="17" height="1600" textColor="#000000" shadeColor="none" useFontSpace="0" useKerning="0" symMark="NONE" borderFillIDRef="2">
         <hh:fontRef hangul="4" latin="4" hanja="5" japanese="5" other="5" symbol="5" user="5"/>
         <hh:ratio hangul="100" latin="100" hanja="100" japanese="100" other="100" symbol="100" user="100"/>
         <hh:spacing hangul="0" latin="0" hanja="0" japanese="0" other="0" symbol="0" user="0"/>
@@ -491,7 +441,7 @@
         <hh:outline type="NONE"/>
         <hh:shadow type="NONE" color="#C0C0C0" offsetX="10" offsetY="10"/>
       </hh:charPr>
-      <hh:charPr id="20" height="1200" textColor="#000000" shadeColor="none" useFontSpace="0" useKerning="0" symMark="NONE" borderFillIDRef="2">
+      <hh:charPr id="18" height="1200" textColor="#000000" shadeColor="none" useFontSpace="0" useKerning="0" symMark="NONE" borderFillIDRef="2">
         <hh:fontRef hangul="3" latin="3" hanja="4" japanese="4" other="4" symbol="4" user="4"/>
         <hh:ratio hangul="100" latin="100" hanja="100" japanese="100" other="100" symbol="100" user="100"/>
         <hh:spacing hangul="0" latin="0" hanja="0" japanese="0" other="0" symbol="0" user="0"/>
@@ -502,7 +452,7 @@
         <hh:outline type="NONE"/>
         <hh:shadow type="NONE" color="#C0C0C0" offsetX="10" offsetY="10"/>
       </hh:charPr>
-      <hh:charPr id="21" height="1400" textColor="#000000" shadeColor="none" useFontSpace="0" useKerning="0" symMark="NONE" borderFillIDRef="3">
+      <hh:charPr id="19" height="1400" textColor="#000000" shadeColor="none" useFontSpace="0" useKerning="0" symMark="NONE" borderFillIDRef="3">
         <hh:fontRef hangul="6" latin="6" hanja="7" japanese="7" other="6" symbol="7" user="6"/>
         <hh:ratio hangul="100" latin="100" hanja="100" japanese="100" other="100" symbol="100" user="100"/>
         <hh:spacing hangul="0" latin="0" hanja="0" japanese="0" other="0" symbol="0" user="0"/>
@@ -513,7 +463,7 @@
         <hh:outline type="NONE"/>
         <hh:shadow type="NONE" color="#C0C0C0" offsetX="10" offsetY="10"/>
       </hh:charPr>
-      <hh:charPr id="22" height="100" textColor="#000000" shadeColor="none" useFontSpace="0" useKerning="0" symMark="NONE" borderFillIDRef="2">
+      <hh:charPr id="20" height="100" textColor="#000000" shadeColor="none" useFontSpace="0" useKerning="0" symMark="NONE" borderFillIDRef="2">
         <hh:fontRef hangul="2" latin="2" hanja="3" japanese="3" other="3" symbol="3" user="3"/>
         <hh:ratio hangul="100" latin="100" hanja="100" japanese="100" other="100" symbol="100" user="100"/>
         <hh:spacing hangul="0" latin="0" hanja="0" japanese="0" other="0" symbol="0" user="0"/>
@@ -525,8 +475,8 @@
         <hh:outline type="NONE"/>
         <hh:shadow type="NONE" color="#C0C0C0" offsetX="10" offsetY="10"/>
       </hh:charPr>
-      <hh:charPr id="23" height="600" textColor="#000000" shadeColor="none" useFontSpace="0" useKerning="0" symMark="NONE" borderFillIDRef="3">
-        <hh:fontRef hangul="4" latin="4" hanja="5" japanese="5" other="5" symbol="5" user="5"/>
+      <hh:charPr id="21" height="1100" textColor="#000000" shadeColor="none" useFontSpace="0" useKerning="0" symMark="NONE" borderFillIDRef="2">
+        <hh:fontRef hangul="6" latin="6" hanja="7" japanese="7" other="6" symbol="7" user="6"/>
         <hh:ratio hangul="100" latin="100" hanja="100" japanese="100" other="100" symbol="100" user="100"/>
         <hh:spacing hangul="0" latin="0" hanja="0" japanese="0" other="0" symbol="0" user="0"/>
         <hh:relSz hangul="100" latin="100" hanja="100" japanese="100" other="100" symbol="100" user="100"/>
@@ -536,8 +486,8 @@
         <hh:outline type="NONE"/>
         <hh:shadow type="NONE" color="#C0C0C0" offsetX="10" offsetY="10"/>
       </hh:charPr>
-      <hh:charPr id="24" height="2000" textColor="#000000" shadeColor="none" useFontSpace="0" useKerning="0" symMark="NONE" borderFillIDRef="2">
-        <hh:fontRef hangul="6" latin="6" hanja="7" japanese="7" other="6" symbol="7" user="6"/>
+      <hh:charPr id="22" height="1500" textColor="#000000" shadeColor="none" useFontSpace="0" useKerning="0" symMark="NONE" borderFillIDRef="2">
+        <hh:fontRef hangul="3" latin="3" hanja="4" japanese="4" other="4" symbol="4" user="4"/>
         <hh:ratio hangul="100" latin="100" hanja="100" japanese="100" other="100" symbol="100" user="100"/>
         <hh:spacing hangul="0" latin="0" hanja="0" japanese="0" other="0" symbol="0" user="0"/>
         <hh:relSz hangul="100" latin="100" hanja="100" japanese="100" other="100" symbol="100" user="100"/>
@@ -1149,35 +1099,6 @@
         <hh:border borderFillIDRef="2" offsetLeft="0" offsetRight="0" offsetTop="0" offsetBottom="0" connect="0" ignoreMargin="0"/>
       </hh:paraPr>
       <hh:paraPr id="20" tabPrIDRef="0" condense="0" fontLineHeight="0" snapToGrid="0" suppressLineNumbers="0" checked="0">
-        <hh:align horizontal="JUSTIFY" vertical="BASELINE"/>
-        <hh:heading type="NONE" idRef="0" level="0"/>
-        <hh:breakSetting breakLatinWord="KEEP_WORD" breakNonLatinWord="KEEP_WORD" widowOrphan="0" keepWithNext="0" keepLines="0" pageBreakBefore="0" lineWrap="BREAK"/>
-        <hh:autoSpacing eAsianEng="0" eAsianNum="0"/>
-        <hp:switch>
-          <hp:case hp:required-namespace="http://www.hancom.co.kr/hwpml/2016/HwpUnitChar">
-            <hh:margin>
-              <hc:intent value="0" unit="HWPUNIT"/>
-              <hc:left value="0" unit="HWPUNIT"/>
-              <hc:right value="0" unit="HWPUNIT"/>
-              <hc:prev value="0" unit="HWPUNIT"/>
-              <hc:next value="0" unit="HWPUNIT"/>
-            </hh:margin>
-            <hh:lineSpacing type="PERCENT" value="120" unit="HWPUNIT"/>
-          </hp:case>
-          <hp:default>
-            <hh:margin>
-              <hc:intent value="0" unit="HWPUNIT"/>
-              <hc:left value="0" unit="HWPUNIT"/>
-              <hc:right value="0" unit="HWPUNIT"/>
-              <hc:prev value="0" unit="HWPUNIT"/>
-              <hc:next value="0" unit="HWPUNIT"/>
-            </hh:margin>
-            <hh:lineSpacing type="PERCENT" value="120" unit="HWPUNIT"/>
-          </hp:default>
-        </hp:switch>
-        <hh:border borderFillIDRef="2" offsetLeft="0" offsetRight="0" offsetTop="0" offsetBottom="0" connect="0" ignoreMargin="0"/>
-      </hh:paraPr>
-      <hh:paraPr id="21" tabPrIDRef="0" condense="0" fontLineHeight="0" snapToGrid="0" suppressLineNumbers="0" checked="0">
         <hh:align horizontal="CENTER" vertical="BASELINE"/>
         <hh:heading type="NONE" idRef="0" level="0"/>
         <hh:breakSetting breakLatinWord="KEEP_WORD" breakNonLatinWord="BREAK_WORD" widowOrphan="0" keepWithNext="0" keepLines="0" pageBreakBefore="0" lineWrap="BREAK"/>
@@ -1199,6 +1120,35 @@
               <hc:left value="0" unit="HWPUNIT"/>
               <hc:right value="0" unit="HWPUNIT"/>
               <hc:prev value="0" unit="HWPUNIT"/>
+              <hc:next value="0" unit="HWPUNIT"/>
+            </hh:margin>
+            <hh:lineSpacing type="PERCENT" value="160" unit="HWPUNIT"/>
+          </hp:default>
+        </hp:switch>
+        <hh:border borderFillIDRef="2" offsetLeft="0" offsetRight="0" offsetTop="0" offsetBottom="0" connect="0" ignoreMargin="0"/>
+      </hh:paraPr>
+      <hh:paraPr id="21" tabPrIDRef="0" condense="0" fontLineHeight="0" snapToGrid="0" suppressLineNumbers="0" checked="0">
+        <hh:align horizontal="JUSTIFY" vertical="BASELINE"/>
+        <hh:heading type="NONE" idRef="0" level="0"/>
+        <hh:breakSetting breakLatinWord="KEEP_WORD" breakNonLatinWord="KEEP_WORD" widowOrphan="0" keepWithNext="0" keepLines="0" pageBreakBefore="0" lineWrap="BREAK"/>
+        <hh:autoSpacing eAsianEng="0" eAsianNum="0"/>
+        <hp:switch>
+          <hp:case hp:required-namespace="http://www.hancom.co.kr/hwpml/2016/HwpUnitChar">
+            <hh:margin>
+              <hc:intent value="0" unit="HWPUNIT"/>
+              <hc:left value="0" unit="HWPUNIT"/>
+              <hc:right value="0" unit="HWPUNIT"/>
+              <hc:prev value="500" unit="HWPUNIT"/>
+              <hc:next value="0" unit="HWPUNIT"/>
+            </hh:margin>
+            <hh:lineSpacing type="PERCENT" value="160" unit="HWPUNIT"/>
+          </hp:case>
+          <hp:default>
+            <hh:margin>
+              <hc:intent value="0" unit="HWPUNIT"/>
+              <hc:left value="0" unit="HWPUNIT"/>
+              <hc:right value="0" unit="HWPUNIT"/>
+              <hc:prev value="1000" unit="HWPUNIT"/>
               <hc:next value="0" unit="HWPUNIT"/>
             </hh:margin>
             <hh:lineSpacing type="PERCENT" value="160" unit="HWPUNIT"/>

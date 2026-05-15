@@ -13,7 +13,7 @@ OWPML 표준의 .hwpx 파일을 **XML 직접 작성** 방식으로 생성·읽�
 
 ```bash
 # 1) marketplace 등록
-/plugin marketplace add <github-user>/<repo>
+/plugin marketplace add mskim8717/hwpx
 
 # 2) plugin 설치
 /plugin install hwpx@hwpx-marketplace

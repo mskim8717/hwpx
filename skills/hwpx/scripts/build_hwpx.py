@@ -49,7 +49,7 @@ SKILL_DIR = SCRIPT_DIR.parent
 TEMPLATES_DIR = SKILL_DIR / "templates"
 BASE_DIR = TEMPLATES_DIR / "base"
 
-AVAILABLE_TEMPLATES = ["report", "report-formal"]
+AVAILABLE_TEMPLATES = ["report"]
 EXCLUDED_PACKAGE_NAMES = {".DS_Store"}
 EXCLUDED_PACKAGE_PARTS = {"__MACOSX", "__pycache__"}
 EXCLUDED_PACKAGE_SUFFIXES = {".pyc", ".pyo"}

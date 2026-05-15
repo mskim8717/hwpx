@@ -7,7 +7,7 @@ description: "한글(HWPX) 문서 생성/읽기/편집 스킬. .hwpx 파일, 한
 
 한글(Hancom Office)의 HWPX 파일을 **XML 직접 작성** 중심으로 생성, 편집, 읽기할 수 있는 스킬.
 HWPX는 ZIP 기반 XML 컨테이너(OWPML 표준)이다. python-hwpx API의 서식 버그를 완전히 우회하며, 세밀한 서식 제어가 가능하다.
-**지원 템플릿**: `base`(빈 문서 스켈레톤), `report`(일반 보고서 양식), `report-formal`(공식·대외 제출용 보고서 양식)
+**지원 템플릿**: `base`(빈 문서 스켈레톤), `report`(보고서 양식)
 
 ## 두 가지 모드 구분 (필수)
 
@@ -132,8 +132,7 @@ hwpx/
 │   ├── base/                             # 베이스 템플릿 (Skeleton 기반)
 │   │   ├── mimetype, META-INF/*, version.xml, settings.xml, Preview/*
 │   │   └── Contents/ (header.xml, section0.xml, content.hpf)
-│   ├── report/                           # 일반 보고서 오버레이 (header.xml, section0.xml)
-│   ├── report-formal/                    # 공식·대외용 보고서 오버레이 (header.xml, section0.xml)
+│   ├── report/                           # 보고서 오버레이 (header.xml, section0.xml)
 │   └── tables/                           # 표 템플릿 (table_builder.py 사용)
 │       ├── basic.xml                     # 기본 표 (4열: 연번/구분/내용/비고)
 │       ├── status.xml                    # 현황표 (4열: 번호/항목/추진현황/진행률)
@@ -142,7 +141,6 @@ hwpx/
 │       └── checklist.xml                 # 점검표 (5열: 번호/점검항목/담당/확인/비고)
 ├── assets/
 │   ├── report-template.hwpx              # report 템플릿 시각 기준 샘플 (런타임 미사용)
-│   ├── report-formal-template.hwpx       # report-formal 템플릿 시각 기준 샘플 (런타임 미사용)
 │   └── all_tables_preview.hwpx           # 표 템플릿(tables/) 5종 종합 미리보기 (런타임 미사용)
 └── references/
     └── hwpx-format.md                    # OWPML XML 요소 레퍼런스
@@ -157,20 +155,18 @@ hwpx/
 ### 템플릿 자동 라우팅 (필수 절차)
 
 이 모드에서는 사용자 요청의 성격을 보고 `--template` 값을 **스킬이 자동 선택**한다.
-요청 키워드가 두 개 이상의 템플릿에 걸치면 더 격식이 높은 쪽을 우선한다.
-명확한 단서가 없으면 `report`를 기본값으로 사용한다.
+명확한 단서가 없거나 보고서/공문/추진계획 등 일반적인 문서 작성 요청이면 `report`를 사용한다.
 
 | 템플릿 | 용도 | 트리거 키워드 |
 |--------|------|---------------|
-| `report` | 일반 업무 보고서 (기본값) | "보고서", "추진현황", "업무보고", "결과보고", "내부 보고", "간단 보고", 별도 단서 없음 |
-| `report-formal` | 공식·대외 제출용 보고서, 결재·공문 형식 | "공식", "대외", "결재", "공문", "정식", "제출", "관·기관", "장관/시장/원장 보고", "기관장 보고", "심사", "감사" |
-| `base` | 표만 있는 문서, 메모, 단순 본문 등 보고서 양식이 불필요한 경우 | "메모", "단순 문서", "표만", "스켈레톤", 보고서 형식이 명백히 아닌 경우 |
+| `report` | 보고서·공문·추진계획 등 모든 정형 문서 (기본값) | "보고서", "추진계획", "추진현황", "업무보고", "결과보고", "공문", "결재", "장관/시장/원장 보고", 별도 단서 없음 |
+| `base` | 보고서 양식이 불필요한 문서(메모, 표만 있는 문서 등) | "메모", "단순 문서", "표만", "스켈레톤" |
 
 라우팅 규칙:
 
-- 사용자가 명시적으로 템플릿 이름을 적은 경우 그 값을 따른다(예: "report-formal로 만들어줘").
+- 사용자가 명시적으로 템플릿 이름을 적은 경우 그 값을 따른다(예: "base로 만들어줘").
 - 모호한 경우 한 차례에 한해 사용자에게 확인한 뒤 진행하고, 결정값을 그대로 사용한다.
-- 결정한 템플릿을 작업 시작 시점에 사용자에게 한 줄로 알린다(예: "→ template=report-formal 사용").
+- 결정한 템플릿을 작업 시작 시점에 사용자에게 한 줄로 알린다(예: "→ template=report 사용").
 
 ### 핵심 원칙: 템플릿은 양식이지 콘텐츠 틀이 아니다
 
@@ -186,7 +182,7 @@ hwpx/
 
 ### 흐름
 
-1. **템플릿 자동 선택** — 위 "템플릿 자동 라우팅" 표에 따라 `report` / `report-formal` / `base` 중 결정
+1. **템플릿 자동 선택** — 위 "템플릿 자동 라우팅" 표에 따라 `report` / `base` 중 결정
 2. **header.xml 확인** — 사용 가능한 스타일 ID(charPr, paraPr, borderFill) 파악
 3. **section0.xml 새로 작성** — secPr은 템플릿에서 복사, 본문은 내용 분량에 맞게 자유롭게 구성
 4. **build_hwpx.py로 빌드**
@@ -496,25 +492,6 @@ python3 "$SKILL_DIR/scripts/preview_table.py" --all
 |------|-------------|-------------|------|
 | 날짜·부서 문단 | 21, 9, 22, 18 | 19 | secPr 포함, 다중 run |
 | 제목 drawText | 24 (내부: 25) | 2 | rect 도형 안 텍스트 |
-
----
-
-## report-formal 템플릿 스타일 ID
-
-> `templates/report-formal/header.xml` 기준. ID 체계가 `report`와 다르므로 **`report` 표의 ID를 그대로 옮겨 쓰지 말 것**.
-> 사용 전 다음 명령으로 정확한 매핑을 확인한다.
->
-> ```bash
-> python3 "$SKILL_DIR/scripts/analyze_template.py" "$SKILL_DIR/assets/report-formal-template.hwpx"
-> ```
->
-> 또는 `templates/report-formal/section0.xml`을 직접 읽어 본문/표가 어떤 charPr/paraPr ID를 사용하는지 파악한 뒤 새 section0.xml을 작성한다. 시각 기준은 `assets/report-formal-template.hwpx`를 한글에서 열어 확인한다.
-
-핵심 차이(요약):
-
-- charPr: 약 23개(id 0~22). 본문 한글 폰트가 `report`와 다른 ID에 매핑됨
-- paraPr: 약 22개
-- borderFill: 약 11개(공식 양식의 결재란/직인란 등 포함 가능)
 
 ---
 

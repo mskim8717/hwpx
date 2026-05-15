@@ -5,7 +5,7 @@ OWPML 표준의 .hwpx 파일을 **XML 직접 작성** 방식으로 생성·읽�
 ## 주요 기능
 
 - **레퍼런스 복원 모드**: 사용자가 첨부한 .hwpx의 구조·서식·쪽수를 보존하며 텍스트/데이터만 교체
-- **템플릿 기반 생성 모드**: `report`(일반 보고서), `report-formal`(공식·대외 보고서), `base`(빈 문서) 중 요청 키워드에 따라 자동 라우팅
+- **템플릿 기반 생성 모드**: `report`(보고서), `base`(빈 문서) 중 요청 키워드에 따라 자동 라우팅
 - **표 템플릿 시스템**: `basic`, `status`, `budget`, `schedule`, `checklist` 5종 + 데이터 주입식 생성
 - **검증 도구**: ZIP/XML 구조 검증, 레퍼런스 대비 페이지 드리프트 가드
 
@@ -47,7 +47,7 @@ hwpx/
 │   ├── SKILL.md                # 스킬 본문 (자세한 사용법)
 │   ├── requirements.txt
 │   ├── scripts/                # build_hwpx, validate, analyze_template 등
-│   ├── templates/              # base/, report/, report-formal/, tables/
+│   ├── templates/              # base/, report/, tables/
 │   ├── assets/                 # 시각 기준 .hwpx 샘플
 │   └── references/             # OWPML 포맷 참조 문서
 ├── README.md

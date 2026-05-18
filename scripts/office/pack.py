@@ -42,6 +42,8 @@ def pack(input_dir: str, hwpx_path: str) -> None:
             f"Missing required 'mimetype' file in {input_dir}"
         )
 
+    Path(hwpx_path).parent.mkdir(parents=True, exist_ok=True)
+
     all_files = sorted(
         p.relative_to(root).as_posix()
         for p in root.rglob("*")

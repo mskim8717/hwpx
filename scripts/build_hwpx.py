@@ -118,6 +118,8 @@ def pack_hwpx(input_dir: Path, output_path: Path) -> None:
     if not mimetype_file.is_file():
         raise SystemExit(f"Missing 'mimetype' in {input_dir}")
 
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+
     all_files = sorted(
         p.relative_to(input_dir).as_posix()
         for p in input_dir.rglob("*")

@@ -63,15 +63,15 @@ python3 "$SKILL_DIR/scripts/analyze_template.py" reference.hwpx \
 python3 "$SKILL_DIR/scripts/build_hwpx.py" \
   --header /tmp/ref_header.xml \
   --section /tmp/new_section0.xml \
-  --output result.hwpx
+  --output output/result.hwpx
 
 # 4) 검증
-python3 "$SKILL_DIR/scripts/validate.py" result.hwpx
+python3 "$SKILL_DIR/scripts/validate.py" output/result.hwpx
 
 # 5) 쪽수 드리프트 가드 (필수)
 python3 "$SKILL_DIR/scripts/page_guard.py" \
   --reference reference.hwpx \
-  --output result.hwpx
+  --output output/result.hwpx
 ```
 
 ## 0. 환경 점검 (스킬 시작 시 1회, 필수)
@@ -115,6 +115,16 @@ python3 "$SKILL_DIR/scripts/page_guard.py" \
 Claude agent는 이 SKILL.md를 읽어 들인 실제 위치를 기준으로 `SKILL_DIR`를 자연스럽게 결정한다. 아래 모든 예시의 `$SKILL_DIR`는 이 값으로 치환해 사용한다.
 
 Python 명령은 현재 agent 환경에서 사용 가능한 `python3`로 실행한다. 필수 의존성은 위 "0. 환경 점검" 절차로 자동 처리되므로, 사용자가 별도로 `pip install`할 필요는 없다. 의존성 목록의 정의는 `requirements.txt`에 있다.
+
+## 결과 저장 위치 (모든 출력에 적용 — 필수)
+
+이 스킬이 생성하는 **모든 `.hwpx` 결과물**은 사용자의 **현재 작업 디렉터리(`$(pwd)`) 아래 `output/` 폴더**에 저장한다.
+
+- 예: `--output output/result.hwpx`, `--output output/2026_보고서.hwpx`
+- `output/` 폴더가 없으면 `build_hwpx.py`(및 `office/pack.py`)가 **자동 생성**한다 — 사용자에게 미리 만들도록 요구하지 않는다.
+- 파일명은 보고서 내용을 식별할 수 있는 한국어/영문 짧은 이름으로 명명한다(예: `output/채용공고계획.hwpx`).
+- 사용자가 명시적으로 다른 경로(예: 데스크탑, 특정 폴더)를 지정한 경우에만 그 경로를 우선한다.
+- 중간 산출물(임시 section XML 등)은 `output/` 대신 `tempfile`/`/tmp`에 두고 사용 후 삭제한다.
 
 ## 디렉토리 구조
 
@@ -198,20 +208,20 @@ hwpx/
 
 ```bash
 # 빈 문서 (base 템플릿)
-python3 "$SKILL_DIR/scripts/build_hwpx.py" --output result.hwpx
+python3 "$SKILL_DIR/scripts/build_hwpx.py" --output output/result.hwpx
 
 # 보고서 템플릿 사용
-python3 "$SKILL_DIR/scripts/build_hwpx.py" --template report --output result.hwpx
+python3 "$SKILL_DIR/scripts/build_hwpx.py" --template report --output output/result.hwpx
 
 # 커스텀 section0.xml 오버라이드
-python3 "$SKILL_DIR/scripts/build_hwpx.py" --template report --section my_section0.xml --output result.hwpx
+python3 "$SKILL_DIR/scripts/build_hwpx.py" --template report --section my_section0.xml --output output/result.hwpx
 
 # header도 오버라이드
-python3 "$SKILL_DIR/scripts/build_hwpx.py" --header my_header.xml --section my_section0.xml --output result.hwpx
+python3 "$SKILL_DIR/scripts/build_hwpx.py" --header my_header.xml --section my_section0.xml --output output/result.hwpx
 
 # 메타데이터 설정
 python3 "$SKILL_DIR/scripts/build_hwpx.py" --template report --section my.xml \
-  --title "제목" --creator "작성자" --output result.hwpx
+  --title "제목" --creator "작성자" --output output/result.hwpx
 ```
 
 ### 실전 패턴: 템플릿에서 secPr만 복사 → 본문 자유 작성 → 빌드
@@ -241,7 +251,7 @@ cat > "$SECTION" << 'XMLEOF'
 XMLEOF
 
 # 2. 빌드
-python3 "$SKILL_DIR/scripts/build_hwpx.py" --section "$SECTION" --output result.hwpx
+python3 "$SKILL_DIR/scripts/build_hwpx.py" --section "$SECTION" --output output/result.hwpx
 
 # 3. 정리
 rm -f "$SECTION"
@@ -423,7 +433,7 @@ python3 "$SKILL_DIR/scripts/table_builder.py" --template basic \
 python3 "$SKILL_DIR/scripts/preview_table.py" --list
 
 # 단일 템플릿 미리보기
-python3 "$SKILL_DIR/scripts/preview_table.py" budget --output /tmp/budget_preview.hwpx
+python3 "$SKILL_DIR/scripts/preview_table.py" budget --output output/budget_preview.hwpx
 
 # 전체 템플릿을 한 번에 미리보기 생성
 python3 "$SKILL_DIR/scripts/preview_table.py" --all
@@ -510,10 +520,10 @@ python3 "$SKILL_DIR/scripts/office/unpack.py" document.hwpx ./unpacked/
 #    스타일: ./unpacked/Contents/header.xml
 
 # 3. 다시 HWPX로 패키징
-python3 "$SKILL_DIR/scripts/office/pack.py" ./unpacked/ edited.hwpx
+python3 "$SKILL_DIR/scripts/office/pack.py" ./unpacked/ output/edited.hwpx
 
 # 4. 검증
-python3 "$SKILL_DIR/scripts/validate.py" edited.hwpx
+python3 "$SKILL_DIR/scripts/validate.py" output/edited.hwpx
 ```
 
 ---
@@ -576,15 +586,15 @@ python3 "$SKILL_DIR/scripts/analyze_template.py" reference.hwpx \
 python3 "$SKILL_DIR/scripts/build_hwpx.py" \
   --header /tmp/ref_header.xml \
   --section /tmp/new_section0.xml \
-  --output result.hwpx
+  --output output/result.hwpx
 
 # 5. 검증
-python3 "$SKILL_DIR/scripts/validate.py" result.hwpx
+python3 "$SKILL_DIR/scripts/validate.py" output/result.hwpx
 
 # 6. 쪽수 드리프트 가드 (필수)
 python3 "$SKILL_DIR/scripts/page_guard.py" \
   --reference reference.hwpx \
-  --output result.hwpx
+  --output output/result.hwpx
 ```
 
 ### 분석 출력 항목
@@ -655,3 +665,4 @@ python3 "$SKILL_DIR/scripts/page_guard.py" \
 14. **무단 페이지 증가 금지**: 사용자 명시 요청/승인 없이 쪽수 증가를 유발하는 구조 변경 금지
 15. **구조 변경 제한**: 사용자 요청이 없는 한 문단/표의 추가·삭제·분할·병합 금지 (치환 중심 편집)
 16. **page_guard 필수 통과**: `validate.py`와 별개로 `page_guard.py`를 반드시 통과해야 완료 처리
+17. **결과 저장 위치**: 모든 `.hwpx` 결과는 `$(pwd)/output/` 폴더에 저장한다. 폴더 미존재 시 자동 생성. 사용자가 다른 경로를 명시한 경우만 예외. ([결과 저장 위치] 섹션 참조)

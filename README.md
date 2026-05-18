@@ -16,26 +16,35 @@ OWPML 표준의 .hwpx 파일을 **XML 직접 작성** 방식으로 생성·읽�
 ### 사용자 전역 스킬로 설치 (모든 프로젝트에서 사용 — 권장)
 
 ```bash
-git clone https://github.com/mskim8717/hwpx.git /tmp/hwpx-src
-mkdir -p ~/.claude/skills
-rm -rf ~/.claude/skills/hwpx
-cp -r /tmp/hwpx-src/skills/hwpx ~/.claude/skills/
+git clone --depth 1 https://github.com/mskim8717/hwpx.git ~/.claude/skills/hwpx
 python3 -m pip install --user -r ~/.claude/skills/hwpx/requirements.txt
-rm -rf /tmp/hwpx-src
 ```
 
 ### 현재 프로젝트 전용 스킬로 설치
 
 ```bash
-git clone https://github.com/mskim8717/hwpx.git /tmp/hwpx-src
-mkdir -p .claude/skills
-rm -rf .claude/skills/hwpx
-cp -r /tmp/hwpx-src/skills/hwpx .claude/skills/
+git clone --depth 1 https://github.com/mskim8717/hwpx.git .claude/skills/hwpx
 python3 -m pip install --user -r .claude/skills/hwpx/requirements.txt
-rm -rf /tmp/hwpx-src
 ```
 
 설치 후 Claude Code를 재시작하면 "한글파일 생성", "보고서 만들어줘", ".hwpx 작성" 같은 요청 시 자동으로 스킬이 호출됩니다.
+
+### 업데이트
+
+```bash
+# 사용자 전역
+git -C ~/.claude/skills/hwpx pull
+
+# 프로젝트 전용
+git -C .claude/skills/hwpx pull
+```
+
+### 제거
+
+```bash
+rm -rf ~/.claude/skills/hwpx        # 사용자 전역
+rm -rf .claude/skills/hwpx          # 프로젝트 전용
+```
 
 ## 의존성
 
@@ -49,25 +58,24 @@ rm -rf /tmp/hwpx-src
 오프라인 환경 등 자동 설치가 불가능한 경우에만 미리 수동 설치:
 
 ```bash
-pip install --user -r skills/hwpx/requirements.txt
+pip install --user -r requirements.txt
 ```
 
 ## 디렉토리 구조
 
 ```
-hwpx/
-├── skills/hwpx/
-│   ├── SKILL.md                # 스킬 본문 (자세한 사용법)
-│   ├── requirements.txt
-│   ├── scripts/                # build_hwpx, validate, analyze_template 등
-│   ├── templates/              # base/, report/, tables/
-│   ├── assets/                 # 시각 기준 .hwpx 샘플
-│   └── references/             # OWPML 포맷 참조 문서
+hwpx/                            # 이 리포지토리 = 스킬 본체
+├── SKILL.md                     # 스킬 본문 (자세한 사용법)
+├── requirements.txt
+├── scripts/                     # build_hwpx, validate, analyze_template 등
+├── templates/                   # base/, report/, tables/
+├── assets/                      # 시각 기준 .hwpx 샘플
+├── references/                  # OWPML 포맷 참조 문서
 ├── README.md
 └── LICENSE
 ```
 
-자세한 사용법, XML 작성 가이드, 스타일 ID 맵은 [`skills/hwpx/SKILL.md`](skills/hwpx/SKILL.md)를 참조하세요.
+자세한 사용법, XML 작성 가이드, 스타일 ID 맵은 [`SKILL.md`](SKILL.md)를 참조하세요.
 
 ## 라이선스
 

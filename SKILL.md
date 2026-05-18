@@ -110,7 +110,7 @@ python3 "$SKILL_DIR/scripts/page_guard.py" \
 |---|---|
 | 사용자 전역 설치 | `$HOME/.claude/skills/hwpx` |
 | 프로젝트 전용 설치 | `$(pwd)/.claude/skills/hwpx` (프로젝트 루트 기준) |
-| 리포 클론 직접 사용 | `$(pwd)/skills/hwpx` (리포 루트 기준) |
+| 리포 클론 직접 사용 | `$(pwd)` (리포 루트 자체가 곧 스킬) |
 
 Claude agent는 이 SKILL.md를 읽어 들인 실제 위치를 기준으로 `SKILL_DIR`를 자연스럽게 결정한다. 아래 모든 예시의 `$SKILL_DIR`는 이 값으로 치환해 사용한다.
 

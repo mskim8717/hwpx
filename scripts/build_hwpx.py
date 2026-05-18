@@ -1,29 +1,26 @@
 #!/usr/bin/env python3
-"""Build an HWPX document from templates and XML overrides.
+"""Build an HWPX document from the report template and optional XML overrides.
 
 Assembles a valid HWPX file by:
-1. Copying the base template
-2. Optionally overlaying the report template
+1. Copying the internal skeleton (mimetype, META-INF, Preview, content.hpf, …)
+2. Overlaying the report template's header.xml and section0.xml
 3. Optionally overriding header.xml and/or section0.xml with custom files
 4. Optionally setting metadata (title, creator)
 5. Validating XML well-formedness
 6. Packaging as HWPX (ZIP with mimetype first, ZIP_STORED)
 
 Usage:
-    # Empty document from base template
+    # Default report document (no overrides)
     python build_hwpx.py --output result.hwpx
 
-    # Using a document-type template
-    python build_hwpx.py --template report --output result.hwpx
-
     # Custom section XML override
-    python build_hwpx.py --template report --section my_section0.xml --output result.hwpx
+    python build_hwpx.py --section my_section0.xml --output result.hwpx
 
     # Custom header and section
     python build_hwpx.py --header my_header.xml --section my_section0.xml --output result.hwpx
 
     # With metadata
-    python build_hwpx.py --template report --section my.xml --title "제목" --creator "작성자" --output result.hwpx
+    python build_hwpx.py --section my.xml --title "제목" --creator "작성자" --output result.hwpx
 """
 
 import argparse
@@ -50,6 +47,7 @@ TEMPLATES_DIR = SKILL_DIR / "templates"
 BASE_DIR = TEMPLATES_DIR / "base"
 
 AVAILABLE_TEMPLATES = ["report"]
+DEFAULT_TEMPLATE = "report"
 EXCLUDED_PACKAGE_NAMES = {".DS_Store"}
 EXCLUDED_PACKAGE_PARTS = {"__MACOSX", "__pycache__"}
 EXCLUDED_PACKAGE_SUFFIXES = {".pyc", ".pyo"}
@@ -239,7 +237,7 @@ def build(
             print(f"  - {e}", file=sys.stderr)
     else:
         print(f"VALID: {output}")
-        print(f"  Template: {template or 'base'}")
+        print(f"  Template: {template}")
         if header_override:
             print(f"  Header: {header_override}")
         if section_override:
@@ -253,7 +251,8 @@ def main() -> None:
     parser.add_argument(
         "--template", "-t",
         choices=AVAILABLE_TEMPLATES,
-        help="Document type template to use as overlay",
+        default=DEFAULT_TEMPLATE,
+        help=f"Document template to use as overlay (default: {DEFAULT_TEMPLATE})",
     )
     parser.add_argument(
         "--header",

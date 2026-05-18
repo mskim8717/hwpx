@@ -9,17 +9,33 @@ OWPML 표준의 .hwpx 파일을 **XML 직접 작성** 방식으로 생성·읽�
 - **표 템플릿 시스템**: `basic`, `status`, `budget`, `schedule`, `checklist` 5종 + 데이터 주입식 생성
 - **검증 도구**: ZIP/XML 구조 검증, 레퍼런스 대비 페이지 드리프트 가드
 
-## 설치 (Claude Code plugin)
+## 설치
+
+> Claude Code 등 agent에게 GitHub URL(`https://github.com/mskim8717/hwpx`)만 주고 "이거 설치해줘"라고 부탁하면, agent가 아래 절차를 따라 설치합니다. 사용자가 직접 실행해도 동일합니다.
+
+### 사용자 전역 스킬로 설치 (모든 프로젝트에서 사용 — 권장)
 
 ```bash
-# 1) marketplace 등록
-/plugin marketplace add mskim8717/hwpx
-
-# 2) plugin 설치
-/plugin install hwpx@hwpx-marketplace
+git clone https://github.com/mskim8717/hwpx.git /tmp/hwpx-src
+mkdir -p ~/.claude/skills
+rm -rf ~/.claude/skills/hwpx
+cp -r /tmp/hwpx-src/skills/hwpx ~/.claude/skills/
+python3 -m pip install --user -r ~/.claude/skills/hwpx/requirements.txt
+rm -rf /tmp/hwpx-src
 ```
 
-설치 후 Claude Code에서 "한글파일 생성", "보고서 만들어줘", ".hwpx 작성" 같은 요청 시 자동으로 스킬이 호출됩니다.
+### 현재 프로젝트 전용 스킬로 설치
+
+```bash
+git clone https://github.com/mskim8717/hwpx.git /tmp/hwpx-src
+mkdir -p .claude/skills
+rm -rf .claude/skills/hwpx
+cp -r /tmp/hwpx-src/skills/hwpx .claude/skills/
+python3 -m pip install --user -r .claude/skills/hwpx/requirements.txt
+rm -rf /tmp/hwpx-src
+```
+
+설치 후 Claude Code를 재시작하면 "한글파일 생성", "보고서 만들어줘", ".hwpx 작성" 같은 요청 시 자동으로 스킬이 호출됩니다.
 
 ## 의존성
 
@@ -40,9 +56,6 @@ pip install --user -r skills/hwpx/requirements.txt
 
 ```
 hwpx/
-├── .claude-plugin/
-│   ├── plugin.json
-│   └── marketplace.json
 ├── skills/hwpx/
 │   ├── SKILL.md                # 스킬 본문 (자세한 사용법)
 │   ├── requirements.txt

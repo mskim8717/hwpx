@@ -104,11 +104,15 @@ python3 "$SKILL_DIR/scripts/page_guard.py" \
 
 ## 환경
 
-```
-# SKILL_DIR는 이 SKILL.md가 위치한 디렉토리의 절대 경로
-# Claude Code plugin으로 설치된 경우 $CLAUDE_SKILL_DIR가 같은 값으로 제공됨
-SKILL_DIR="${CLAUDE_SKILL_DIR:-$(cd "$(dirname "$0")/.." && pwd)}"   # 스크립트 내에서
-```
+`SKILL_DIR`는 이 SKILL.md가 위치한 디렉터리의 절대 경로다. 설치 방식에 따라 다음과 같이 결정한다:
+
+| 설치 방식 | `SKILL_DIR` 값 |
+|---|---|
+| 사용자 전역 설치 | `$HOME/.claude/skills/hwpx` |
+| 프로젝트 전용 설치 | `$(pwd)/.claude/skills/hwpx` (프로젝트 루트 기준) |
+| 리포 클론 직접 사용 | `$(pwd)/skills/hwpx` (리포 루트 기준) |
+
+Claude agent는 이 SKILL.md를 읽어 들인 실제 위치를 기준으로 `SKILL_DIR`를 자연스럽게 결정한다. 아래 모든 예시의 `$SKILL_DIR`는 이 값으로 치환해 사용한다.
 
 Python 명령은 현재 agent 환경에서 사용 가능한 `python3`로 실행한다. 필수 의존성은 위 "0. 환경 점검" 절차로 자동 처리되므로, 사용자가 별도로 `pip install`할 필요는 없다. 의존성 목록의 정의는 `requirements.txt`에 있다.
 
